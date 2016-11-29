@@ -24,6 +24,10 @@ The `passenger_root` for your application (e.g. the `public` folder in a rails a
 
 The app environment passenger will load.
 
+    passenger_apt_repo_url: https://oss-binaries.phusionpassenger.com/apt/passenger
+
+The URL of the APT repo where Passenger packages can be found. The default value will provide Passenger 5.x packages. If you need Passenger 4.x, use `https://oss-binaries.phusionpassenger.com/apt/passenger/4`. See [Phusion's blog post](https://blog.phusion.nl/2015/03/08/passenger-4-apt-repository-now-available/) for more information.
+
     passenger_root: /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini
     passenger_ruby: /usr/bin/ruby
 
